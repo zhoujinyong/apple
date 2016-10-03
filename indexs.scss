@@ -1,0 +1,43 @@
+@mixin yuan($size){
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}
+@mixin juzhong{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+%juzhong{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+@mixin fang($size){
+    
+    width: $size;
+    height:$size;
+}
+$m-size:768px;
+@mixin onm{
+      @media screen and (max-width:$m-size){
+          @content;
+      }
+}
+$s-size:480px;
+@mixin ons{
+      @media screen and (max-width:$s-size){
+          @content;
+      }
+}
+@mixin box{
+    border: 1px solid #000000;
+    box-shadow: 0 0 3px orangered;
+    
+    }
